@@ -1,0 +1,8 @@
+<p> Tugas Tyka </p>
+<button 
+  class="btn btn-primary" 
+  (click)="onCreationStatus()">Tampilkan Detail</button><br>
+  {{tulisan}}
+  <p [ngClass] = "{online: e > 4}"
+      [ngStyle] = "{backgroundColor: e > 4? 'pink' : 'transparant'}"
+   *ngFor="let e of hallo">{{e}}</p>

@@ -1,0 +1,15 @@
+<p> Tugas Tyka</p>
+<!-- <input 
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"> -->
+  <label>Masukkan Nama Anda : </label>
+<input type="text"
+ class="form-control"
+ [(ngModel)]="username">
+<p>{{ username }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="username===''"
+  (click)="clear()">Add</button>
+<p>{{ usernameStatus }}</p>
